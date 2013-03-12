@@ -1,0 +1,44 @@
+#squash_image {
+  margin: auto;
+  padding: 20px;
+}
+
+#result, #breakdown9, #breakdown8, #breakdown7,
+#breakdown6, #breakdown5, #breakdown4, #breakdown3,
+#breakdown2, #breakdown1, #breakdown0 {
+  border: 1px solid #2284a1;
+  text-align: center;
+  border-radius: 10px;
+  margin: auto;
+  padding: 10px;
+  margin: 10px;
+  background-color: #2ba6cb;
+  color: white;
+}
+
+#simulate_button {
+  margin: 0 auto;
+  width: 150px;
+  display: block;
+}
+
+body {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 10px;
+}
+
+#instructions {
+  text-align: center;
+}
+
+.background {
+  background-image:url('knitting250px.png');
+  padding: 20px;
+}
+
+.simhome {
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  width: 25%;
+}

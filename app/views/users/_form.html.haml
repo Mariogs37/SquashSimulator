@@ -1,0 +1,13 @@
+.row
+  .five.columns
+    = form_for @user, :remote => true do |f|
+      = f.label :email
+      = f.text_field :email, :autofocus => true
+      = f.label :team
+      = f.text_field :team
+      = f.label :password
+      = f.password_field :password
+      = f.label :password_confirmation, 'Password Confirmation'
+      = f.password_field :password_confirmation
+      = f.submit nil, :class => 'button radius'
+  .seven.columns

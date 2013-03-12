@@ -1,0 +1,7 @@
+.row.playerName
+  .large-6.columns
+    ="\##{@i} Name:"
+    %input{:name => "Name", :type => "text"}/
+  .large-6.columns
+    Probability of Winning:
+    %input{:id => "probability" + @i.to_s}

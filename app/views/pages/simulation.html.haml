@@ -1,0 +1,39 @@
+%h4#instructions
+  Simply select the teams from the drop-down menus, input each team's top nine players, and assign a probability of the first team's player winning that particular match.  The simulator does the rest!
+
+.row
+  .large-6.columns
+    Number of Simulations:
+    %input#num_of_simulations
+
+.row
+  .large-6.columns
+    %p
+      Team 1:
+      %select#team1
+    -for @i in 1..9
+      = render :partial => 'player'
+
+  / TEAM 2 STARTS HERE
+  .large-6.columns
+    %p
+      Team 2:
+      %select#team2
+    -for @i in 1..9
+      = render :partial => 'player'
+
+#result.hide
+
+#breakdown9.hide
+#breakdown8.hide
+#breakdown7.hide
+#breakdown6.hide
+#breakdown5.hide
+#breakdown4.hide
+#breakdown3.hide
+#breakdown2.hide
+#breakdown1.hide
+#breakdown0.hide
+
+
+#simulate_button.button Simulate Match!
