@@ -8,4 +8,5 @@ SquashSimulator::Application.routes.draw do
   delete '/login' => 'session#destroy'
 
   get '/simulation' => 'pages#simulation'
+  get '/datatable' => 'pages#datatable'
 end

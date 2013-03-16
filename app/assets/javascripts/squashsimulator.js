@@ -1,3 +1,5 @@
+//functions defined
+
 function start() {
   var teamList = ["Bates", "Bowdoin", "Brown", "Colby", "Columbia", "Cornell", "Dartmouth", "Franklin and Marshall", "George Washington", "Harvard", "Middlebury", "Naval Academy", "Pennsylvania", "Princeton", "Rochester", "St. Lawrence", "Trinity", "Western Ontario", "Williams", "Yale"];
 
@@ -7,11 +9,12 @@ function start() {
       }
     }
 
-$(function(){
-  start();
-  $('#simulate_button').click(run_simulation);
-
-});
+function reset() {
+  for (var l = 1; l < 10; l++) {
+    $('#probability' + l).val('');
+  }
+  $('#chart').addClass('hide');
+}
 
 function run_simulation() {
   var num_of_simulations = parseInt($('#num_of_simulations').val());
@@ -94,6 +97,28 @@ function run_simulation() {
     var breakdown1 = " Team 1 loses 1-8: " + ((team1_18/num_of_simulations)*100).toFixed(2) + "%";
     var breakdown0 = " Team 1 loses 0-9: " + ((team1_09/num_of_simulations)*100).toFixed(2) + "%";
 
+//create chart for results
+
+    Morris.Bar({
+      element: 'chart',
+      data: [
+        { x: '9-0', y: ((team1_90/num_of_simulations)*100).toFixed(2)},
+        { x: '8-1', y: ((team1_81/num_of_simulations)*100).toFixed(2)},
+        { x: '7-2', y: ((team1_72/num_of_simulations)*100).toFixed(2)},
+        { x: '6-3', y: ((team1_63/num_of_simulations)*100).toFixed(2)},
+        { x: '5-4', y: ((team1_54/num_of_simulations)*100).toFixed(2)},
+        { x: '4-5', y: ((team1_45/num_of_simulations)*100).toFixed(2)},
+        { x: '3-6', y: ((team1_36/num_of_simulations)*100).toFixed(2)},
+        { x: '2-7', y: ((team1_27/num_of_simulations)*100).toFixed(2)},
+        { x: '1-8', y: ((team1_18/num_of_simulations)*100).toFixed(2)},
+        { x: '0-9', y: ((team1_09/num_of_simulations)*100).toFixed(2)}
+
+      ],
+      xkey: ['x'],
+      ykey: ['y'],
+      labels: ['Match Score']
+    });
+
     $('#result').text(output);
     $('#breakdown9').text(breakdown9);
     $('#breakdown8').text(breakdown8);
@@ -120,5 +145,14 @@ function run_simulation() {
   $('#breakdown0').removeClass('hide');
   $('#result').removeClass('hide');
   $('#simulate_button').hide();
+  $('#chart').removeClass('hide');
 }
 
+ //code run on page load
+
+$(function(){
+  start();
+  $('#simulate_button').click(run_simulation);
+  $('#reset_button').click(reset);
+
+});

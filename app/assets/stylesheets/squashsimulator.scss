@@ -16,10 +16,23 @@
   color: white;
 }
 
-#simulate_button {
-  margin: 0 auto;
+#chart {
+
+  height: 300px;
+  width: 400px;
+}
+
+#simulate_button, #reset_button {
+  margin: 20px auto;
   width: 150px;
   display: block;
+  text-align: center;
+  float: left;
+}
+
+#datatable {
+  font-size: 14px;
+  width: 100%;
 }
 
 body {
@@ -41,4 +54,8 @@ body {
   margin: 0 auto;
   display: block;
   width: 25%;
+}
+
+.row {
+  padding: 0px;
 }
