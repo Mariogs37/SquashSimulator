@@ -5,35 +5,28 @@
   .large-6.columns
     Number of Simulations:
     %input#num_of_simulations
+  .large-6.columns
 
 .row
-  .large-6.columns
+  .large-5.columns
     %p
       Team 1:
       %select#team1
     -for @i in 1..9
       = render :partial => 'player'
 
+  .large-2.columns.slider
+    %p
+
   / TEAM 2 STARTS HERE
-  .large-6.columns
+  .large-5.columns
     %p
       Team 2:
       %select#team2
     -for @i in 1..9
-      = render :partial => 'player'
+      = render :partial => 'player2'
 
 #result.hide
-
-#breakdown9.hide
-#breakdown8.hide
-#breakdown7.hide
-#breakdown6.hide
-#breakdown5.hide
-#breakdown4.hide
-#breakdown3.hide
-#breakdown2.hide
-#breakdown1.hide
-#breakdown0.hide
 
 #chart.hide
 
