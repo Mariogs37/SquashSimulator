@@ -16,10 +16,14 @@
   color: white;
 }
 
+.aligncenter, #num_of_simulations {
+  text-align: center;
+}
+
 #chart {
 
-  height: 400px;
-  width: 600px;
+  height: 500px;
+  width: 750px;
 }
 
 #simulate_button, #reset_button {
@@ -36,7 +40,7 @@
 
 body {
   font-family: 'Libre Baskerville', serif;
-  font-size: 10px;
+  font-size: 12px;
 }
 
 #instructions {

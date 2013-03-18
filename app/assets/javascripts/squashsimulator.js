@@ -10,8 +10,6 @@ function start() {
 
   // for (var m = 1; m < 10; m++) {
   $( ".slider" ).slider({ animate: "fast" });
-  var animate = $( ".slider" ).slider( "option", "animate" );
-  $( ".slider" ).slider( "option", "animate", "fast" );
   // }
 }
 
@@ -20,7 +18,7 @@ function reset() {
     $('#probability' + l).val('');
   }
   $('#chart').addClass('hide');
-  $('#simulate_button').removeClass('hide');
+  $('#simulate_button').show();
   $('#reset_button').addClass('hide');
 }
 
@@ -109,7 +107,6 @@ function run_simulation() {
 
 
     $('#result').removeClass('hide');
-    $('#simulate_button').hide();
     $('#chart').removeClass('hide');
     $('#chart').empty();
 
