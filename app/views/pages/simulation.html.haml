@@ -1,40 +1,69 @@
 %h4#instructions
   Input number of simulations, teams, and probabilities. The simulator does the rest!
 
-.row
-  .large-4.columns
-    &nbsp;
-  .large-4.columns.aligncenter
-    %input#num_of_simulations{:placeholder => "Number of Simulations", :type => "text"}
-  .large-4.columns
+#after
+  .row
+    .large-4.columns
+      &nbsp;
+    .large-4.columns.aligncenter
+      %input#num_of_simulations{:placeholder => "Number of Simulations", :type => "text"}
+    .large-4.columns
 
-.row
-  .large-5.columns
-    %p
-      Team 1:
-      %select#team1
-    -for @i in 1..9
-      = render :partial => 'player'
+  .row
+    .large-5.columns
+      %p
+        Team 1:
+        %select#team1
+      -for @i in 1..9
+        = render :partial => 'player'
 
-  .large-2.columns
-    #slider1
-    #slider2
-    #slider3
-    #slider4
-    #slider5
-    #slider6
-    #slider7
-    #slider8
-    #slider9
+    .large-2.columns
+      %p
+      %p
+        .row.playerName
+          #slider1
+          #s1
+      %p
+        .row.playerName
+          #slider2
+          #s2
+      %p
+        .row.playerName
+          #slider3
+          #s3
+      %p
+        .row.playerName
+          #slider4
+          #s4
+      %p
+        .row.playerName
+          #slider5
+          #s5
+      %p
+        .row.playerName
+          #slider6
+          #s6
+      %p
+        .row.playerName
+          #slider7
+          #s7
+      %p
+        .row.playerName
+          #slider8
+          #s8
+      %p
+        .row.playerName
+          #slider9
+          #s9
 
 
-  / TEAM 2 STARTS HERE
-  .large-5.columns
-    %p
-      Team 2:
-      %select#team2
-    -for @i in 1..9
-      = render :partial => 'player2'
+    / TEAM 2 STARTS HERE
+    .large-5.columns
+      %p
+        Team 2:
+        %select#team2
+      -for @i in 1..9
+        = render :partial => 'player2'
 
 #result.hide
 
