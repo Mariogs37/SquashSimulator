@@ -16,8 +16,15 @@
   color: white;
 }
 
+
 .aligncenter, #num_of_simulations {
   text-align: center;
+}
+
+.center {
+  margin-right: 40%;
+  margin-left: 40%;
+  width: 20%;
 }
 
 #chart {
@@ -36,6 +43,11 @@
 #datatable {
   font-size: 14px;
   width: 100%;
+}
+
+#slider1, #slider2, #slider3, #slider4, #slider5, #slider6, #slider7,
+#slider8, #slider9 {
+  height: 20px;
 }
 
 body {

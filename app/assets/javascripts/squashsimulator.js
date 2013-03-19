@@ -8,9 +8,7 @@ function start() {
         $('#team2').append('<option value="' + teamList[i] + '">' + teamList[i] + ' </option>');
       }
 
-  // for (var m = 1; m < 10; m++) {
-  $( ".slider" ).slider({ animate: "fast" });
-  // }
+  $("#slider1").slider();
 }
 
 function reset() {

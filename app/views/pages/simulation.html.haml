@@ -3,6 +3,7 @@
 
 .row
   .large-4.columns
+    &nbsp;
   .large-4.columns.aligncenter
     %input#num_of_simulations{:placeholder => "Number of Simulations", :type => "text"}
   .large-4.columns
@@ -15,8 +16,17 @@
     -for @i in 1..9
       = render :partial => 'player'
 
-  .large-2.columns.slider
-    %p
+  .large-2.columns
+    #slider1
+    #slider2
+    #slider3
+    #slider4
+    #slider5
+    #slider6
+    #slider7
+    #slider8
+    #slider9
+
 
   / TEAM 2 STARTS HERE
   .large-5.columns
