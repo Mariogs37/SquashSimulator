@@ -1,5 +1,5 @@
 .row.playerName
   .large-6.columns
-    %input.aligncenter{:name => "Name", :type => "text", :placeholder => "\##{@i} Name"}
+    %input.aligncenter{:id => "Team1Name#{@i}", :type => "text", :placeholder => "\##{@i} Name"}
   .large-6.columns
-    %input.aligncenter{:id => "probability" + @i.to_s, :placeholder => "Win Probability", :type => "text"}
+    %input.aligncenter{:id => "probability#{@i}", :placeholder => "Win Probability", :type => "text"}

@@ -1,97 +1,96 @@
 //functions defined
 
 function start() {
-  var teamList = ["Bates", "Bowdoin", "Brown", "Colby", "Columbia", "Cornell", "Dartmouth", "Franklin and Marshall", "George Washington", "Harvard", "Middlebury", "Naval Academy", "Pennsylvania", "Princeton", "Rochester", "St. Lawrence", "Trinity", "Western Ontario", "Williams", "Yale"];
 
-      for (var i = 0; i <= 19; i++) {
-        $('#team1').append('<option value="' + teamList[i] + '">' + teamList[i] + ' </option>');
-        $('#team2').append('<option value="' + teamList[i] + '">' + teamList[i] + ' </option>');
+  for (var n = 1; n < 10; n++) {
+
+    var name = "#slider" + n;
+
+    $(name).slider({
+      min: 0,
+      max: 100,
+      slide: function(event, ui) {
+        n = this.id[6];
+        $('#probability' + n).val(ui.value);
+        $('#team2probability' + n).val(100 - (ui.value));
       }
-
-for (var n = 1; n < 10; n++) {
-  $("#slider1").slider({
-    min: 0,
-    max: 100,
-    slide: function(event, ui) {
-      $('#probability1').val(ui.value);
-      $('#team2probability1').val(100 - (ui.value));
-
-    }
-  });
+    });
+  }
 }
-  $("#slider2").slider({
-    min: 0,
-    max: 100,
-    slide: function(event, ui) {
-      $('#probability2').val(ui.value);
-      $('#team2probability2').val(100 - (ui.value));
-    }
-  });
 
-  $("#slider3").slider({
-    min: 0,
-    max: 100,
-    slide: function(event, ui) {
-      $('#probability3').val(ui.value);
-      $('#team2probability3').val(100 - (ui.value));
-    }
-  });
+//   $("#slider2").slider({
+//     min: 0,
+//     max: 100,
+//     slide: function(event, ui) {
+//       $('#probability2').val(ui.value);
+//       $('#team2probability2').val(100 - (ui.value));
+//     }
+//   });
 
-  $("#slider4").slider({
-    min: 0,
-    max: 100,
-    slide: function(event, ui) {
-      $('#probability4').val(ui.value);
-      $('#team2probability4').val(100 - (ui.value));
-    }
-  });
+//   $("#slider3").slider({
+//     min: 0,
+//     max: 100,
+//     slide: function(event, ui) {
+//       $('#probability3').val(ui.value);
+//       $('#team2probability3').val(100 - (ui.value));
+//     }
+//   });
 
-  $("#slider5").slider({
-    min: 0,
-    max: 100,
-    slide: function(event, ui) {
-      $('#probability5').val(ui.value);
-      $('#team2probability5').val(100 - (ui.value));
-    }
-  });
+//   $("#slider4").slider({
+//     min: 0,
+//     max: 100,
+//     slide: function(event, ui) {
+//       $('#probability4').val(ui.value);
+//       $('#team2probability4').val(100 - (ui.value));
+//     }
+//   });
 
-  $("#slider6").slider({
-    min: 0,
-    max: 100,
-    slide: function(event, ui) {
-      $('#probability6').val(ui.value);
-      $('#team2probability6').val(100 - (ui.value));
-    }
-  });
+//   $("#slider5").slider({
+//     min: 0,
+//     max: 100,
+//     slide: function(event, ui) {
+//       $('#probability5').val(ui.value);
+//       $('#team2probability5').val(100 - (ui.value));
+//     }
+//   });
 
-  $("#slider7").slider({
-    min: 0,
-    max: 100,
-    slide: function(event, ui) {
-      $('#probability7').val(ui.value);
-      $('#team2probability7').val(100 - (ui.value));
-    }
-  });
+//   $("#slider6").slider({
+//     min: 0,
+//     max: 100,
+//     slide: function(event, ui) {
+//       $('#probability6').val(ui.value);
+//       $('#team2probability6').val(100 - (ui.value));
+//     }
+//   });
 
-  $("#slider8").slider({
-    min: 0,
-    max: 100,
-    slide: function(event, ui) {
-      $('#probability8').val(ui.value);
-      $('#team2probability8').val(100 - (ui.value));
-    }
-  });
+//   $("#slider7").slider({
+//     min: 0,
+//     max: 100,
+//     slide: function(event, ui) {
+//       $('#probability7').val(ui.value);
+//       $('#team2probability7').val(100 - (ui.value));
+//     }
+//   });
 
-  $("#slider9").slider({
-    min: 0,
-    max: 100,
-    slide: function(event, ui) {
-      $('#probability9').val(ui.value);
-      $('#team2probability9').val(100 - (ui.value));
-    }
-  });
+//   $("#slider8").slider({
+//     min: 0,
+//     max: 100,
+//     slide: function(event, ui) {
+//       $('#probability8').val(ui.value);
+//       $('#team2probability8').val(100 - (ui.value));
+//     }
+//   });
 
-}
+//   $("#slider9").slider({
+//     min: 0,
+//     max: 100,
+//     slide: function(event, ui) {
+//       $('#probability9').val(ui.value);
+//       $('#team2probability9').val(100 - (ui.value));
+//     }
+//   });
+
+// }
 
 function reset() {
   for (var l = 1; l < 10; l++) {
@@ -103,7 +102,7 @@ function reset() {
   $('#reset_button').addClass('hide');
   $('#result').hide();
   $('#after').show();
-  $('#instructions').show()
+  $('#instructions').show();
 }
 
 function run_simulation() {
@@ -206,11 +205,68 @@ function run_simulation() {
     });
 }
 
+
+function calculate_probability(rating1, rating2) {
+  var first_probability;
+  if (rating1 > rating2) {
+    first_probability = 1/(Math.pow(10, (-(rating1-rating2)/0.5))+1);
+    first_probability = Math.round(100 * first_probability);
+    // 1/(POWER(10,(-(WRO-LRO)/D))+1)
+  }
+  else {
+    first_probability = 1 - (1/(Math.pow(10, (-(rating2-rating1)/0.5))+1));
+    first_probability = Math.round(100 * first_probability);
+  }
+  return first_probability;
+}
+
+
  //code run on page load
 
 $(function(){
   start();
   $('#simulate_button').click(run_simulation);
   $('#reset_button').click(reset);
+  $('select').change(function(){
+    var selected_team1 = $('#team1').val();
+    var selected_team2 = $('#team2').val();
+    $.ajax({
+      dataType: 'json',
+      url: '/team_lookup',
+      type: 'get',
+      data: {
+        first_team: selected_team1,
+        second_team: selected_team2
+      }
+    }).done(function(received_data){
+      var first = received_data.teams[0];
+      var second = received_data.teams[1];
+      for (var index1 = 0; index1 < first.length; index1++)
+      {
+        $('#Team1Name'+ (index1+1)).val(first[index1][0]);
+        $('#Team1Name'+ (index1+1)).data('rating', first[index1][1]);
+
+      }
+      for (var index2 = 0; index2 < second.length; index2++)
+      {
+        $('#Team2Name'+ (index2+1)).val(second[index2][0]);
+        $('#Team2Name'+ (index2+1)).data('rating', second[index2][1]);
+      }
+      if ( ($('#team1').val() != 'Select Team') || ($('#team2').val() != 'Select Team')) {
+        for (var k = 1; k <= first.length; k++) {
+          var first_rating = parseFloat($('#Team1Name'+k).data().rating);
+          var second_rating = parseFloat($('#Team2Name'+k).data().rating);
+          var first_prob = calculate_probability(first_rating, second_rating);
+          var second_prob = Math.round(100 - first_prob);
+          $('#probability'+k).val(first_prob);
+          $('#team2probability'+k).val(second_prob);
+        }
+      }
+
+
+      //debugger
+
+    });
+  });
 
 });

@@ -1,4 +1,5 @@
 User.delete_all
+Team.delete_all
 
 u1 = User.create(:email => 'benjamin_clayman@alumni.brown.edu', :password => 'a', :password_confirmation => 'a', :team => 'Brown')
 u2 = User.create(:email => 'sam.clayman@alumni.yale.edu', :password => 'a', :password_confirmation => 'a', :team => 'Yale')
@@ -8,3 +9,25 @@ u5 = User.create(:email => 'todd.harrity@princeton.edu', :password => 'a', :pass
 u6 = User.create(:email => 'george.miller@williams.edu', :password => 'a', :password_confirmation => 'a', :team => 'Williams')
 u7 = User.create(:email => 'albert.shoihet@uwo.edu', :password => 'a', :password_confirmation => 'a', :team => 'Western Ontario')
 u8 = User.create(:email => 'will.hartigan@cornell.edu', :password => 'a', :password_confirmation => 'a', :team => 'Cornell')
+
+Trinity = Team.create(:name => 'Trinity', :team_id => 7689)
+Harvard = Team.create(:name => 'Harvard', :team_id => 7679)
+Princeton = Team.create(:name => 'Princeton', :team_id => 7676)
+Yale = Team.create(:name => 'Yale', :team_id => 7680)
+Rochester = Team.create(:name => 'Rochester', :team_id => 7681)
+SLU = Team.create(:name => 'SLU', :team_id => 7717)
+FM = Team.create(:name => 'F&M', :team_id => 7713)
+Cornell = Team.create(:name => 'Cornell', :team_id => 7683)
+UWO = Team.create(:name => 'UWO', :team_id => 7684)
+Williams = Team.create(:name => 'Williams', :team_id => 7700)
+Dartmouth = Team.create(:name => 'Dartmouth', :team_id => 7685)
+Columbia = Team.create(:name => 'Columbia', :team_id => 7691)
+Bates = Team.create(:name => 'Bates', :team_id => 7687)
+Penn = Team.create(:name => 'Penn', :team_id => 7682)
+Navy = Team.create(:name => 'Navy', :team_id => 7694)
+Brown = Team.create(:name => 'Brown', :team_id => 7693)
+Middlebury = Team.create(:name => 'Middlebury', :team_id => 7678)
+Wesleyan = Team.create(:name => 'Wesleyan', :team_id => 7702)
+GWU = Team.create(:name => 'GWU', :team_id => 7718)
+Bowdoin = Team.create(:name => 'Bowdoin', :team_id => 7686)
+

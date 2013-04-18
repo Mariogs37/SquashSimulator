@@ -1,10 +1,11 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.12'
+gem 'rails'
 gem 'pg'
 gem 'jquery-rails'
 gem 'haml'
 gem 'bcrypt-ruby'
+gem 'nokogiri'
 
 group :assets do
 gem 'sass-rails',   '~> 3.2.3'

@@ -13,7 +13,7 @@
     .large-5.columns
       %p
         Team 1:
-        %select#team1
+        = select_tag('team', options_from_collection_for_select(Team.sorted, :team_id, :name), :prompt => 'Select Team', :id => 'team1')
       -for @i in 1..9
         = render :partial => 'player'
 
@@ -61,7 +61,7 @@
     .large-5.columns
       %p
         Team 2:
-        %select#team2
+        = select_tag('team', options_from_collection_for_select(Team.sorted, :team_id, :name), :prompt => 'Select Team', :id => 'team2')
       -for @i in 1..9
         = render :partial => 'player2'
 
