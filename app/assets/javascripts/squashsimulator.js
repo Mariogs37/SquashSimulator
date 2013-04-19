@@ -18,80 +18,6 @@ function start() {
   }
 }
 
-//   $("#slider2").slider({
-//     min: 0,
-//     max: 100,
-//     slide: function(event, ui) {
-//       $('#probability2').val(ui.value);
-//       $('#team2probability2').val(100 - (ui.value));
-//     }
-//   });
-
-//   $("#slider3").slider({
-//     min: 0,
-//     max: 100,
-//     slide: function(event, ui) {
-//       $('#probability3').val(ui.value);
-//       $('#team2probability3').val(100 - (ui.value));
-//     }
-//   });
-
-//   $("#slider4").slider({
-//     min: 0,
-//     max: 100,
-//     slide: function(event, ui) {
-//       $('#probability4').val(ui.value);
-//       $('#team2probability4').val(100 - (ui.value));
-//     }
-//   });
-
-//   $("#slider5").slider({
-//     min: 0,
-//     max: 100,
-//     slide: function(event, ui) {
-//       $('#probability5').val(ui.value);
-//       $('#team2probability5').val(100 - (ui.value));
-//     }
-//   });
-
-//   $("#slider6").slider({
-//     min: 0,
-//     max: 100,
-//     slide: function(event, ui) {
-//       $('#probability6').val(ui.value);
-//       $('#team2probability6').val(100 - (ui.value));
-//     }
-//   });
-
-//   $("#slider7").slider({
-//     min: 0,
-//     max: 100,
-//     slide: function(event, ui) {
-//       $('#probability7').val(ui.value);
-//       $('#team2probability7').val(100 - (ui.value));
-//     }
-//   });
-
-//   $("#slider8").slider({
-//     min: 0,
-//     max: 100,
-//     slide: function(event, ui) {
-//       $('#probability8').val(ui.value);
-//       $('#team2probability8').val(100 - (ui.value));
-//     }
-//   });
-
-//   $("#slider9").slider({
-//     min: 0,
-//     max: 100,
-//     slide: function(event, ui) {
-//       $('#probability9').val(ui.value);
-//       $('#team2probability9').val(100 - (ui.value));
-//     }
-//   });
-
-// }
-
 function reset() {
   for (var l = 1; l < 10; l++) {
     $('#probability' + l).val('');
@@ -172,8 +98,13 @@ function run_simulation() {
       totalMatches2++;
     }
 
-    var output = "Over " + num_of_simulations.toString() + " simulations, " + $('#team1').val() + ": " + totalMatches1.toString() + ", " + $('#team2').val() + ": " + totalMatches2.toString() + ". " +
-    $('#team1').val() + " wins " + ((totalMatches1/num_of_simulations)*100).toFixed(2) + "%. " + $('#team2').val() + " wins " + ((totalMatches2/num_of_simulations)*100).toFixed(2) + "%."
+
+    var selectText1 = $('#team1 option:selected').html();
+    var selectText2 = $('#team2 option:selected').html();
+
+    var output = "Over " + num_of_simulations.toString() + " simulations, " + selectText1 + ": " + totalMatches1.toString() + ", " + selectText2 + ": " + totalMatches2.toString() + ". " +
+    selectText1 + " wins " + ((totalMatches1/num_of_simulations)*100).toFixed(2) + "%. " + selectText2 + " wins " + ((totalMatches2/num_of_simulations)*100).toFixed(2) + "%.";
+
     $('#result').text(output);
     $('#result').show();
     $('#chart').removeClass('hide');
@@ -211,7 +142,6 @@ function calculate_probability(rating1, rating2) {
   if (rating1 > rating2) {
     first_probability = 1/(Math.pow(10, (-(rating1-rating2)/0.5))+1);
     first_probability = Math.round(100 * first_probability);
-    // 1/(POWER(10,(-(WRO-LRO)/D))+1)
   }
   else {
     first_probability = 1 - (1/(Math.pow(10, (-(rating2-rating1)/0.5))+1));
@@ -220,6 +150,9 @@ function calculate_probability(rating1, rating2) {
   return first_probability;
 }
 
+function get_all_players(array_of_teams){
+
+}
 
  //code run on page load
 
