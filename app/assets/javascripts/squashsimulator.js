@@ -160,6 +160,19 @@ $(function(){
   start();
   $('#simulate_button').click(run_simulation);
   $('#reset_button').click(reset);
+  $('#rankings_link').click(function(){
+    $.ajax({
+      dataType: 'json',
+      url: '/rankings',
+      type: 'get'
+    }).done(function(received_data){
+      for (var m = 0; m < received_data.length; m++) {
+        $('#rankings ol').append('<li>' + received_data[m] + '</li>');
+      }
+
+
+    });
+  });
   $('select').change(function(){
     var selected_team1 = $('#team1').val();
     var selected_team2 = $('#team2').val();
@@ -195,9 +208,6 @@ $(function(){
           $('#team2probability'+k).val(second_prob);
         }
       }
-
-
-      //debugger
 
     });
   });

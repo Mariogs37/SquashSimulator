@@ -10,4 +10,5 @@ SquashSimulator::Application.routes.draw do
   get '/simulation' => 'pages#simulation'
   get '/datatable' => 'pages#datatable'
   get '/team_lookup' => 'pages#scrape'
+  get '/rankings' => 'pages#rankings'
 end
