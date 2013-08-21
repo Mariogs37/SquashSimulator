@@ -6,7 +6,7 @@ class PagesController < ApplicationController
     @top_20 = Team.limit(20).sorted
   end
 
-  def rankings
+  def ladder
     @top_80 = Team.all
     # loop through all teams, add each player and their rating to the hash, sort by rating, limit to 200
     all_players = {}
@@ -30,7 +30,8 @@ class PagesController < ApplicationController
     all_players.each do |player|
       list << player[0]
     end
-    render :json => list
+    @list = list
+    render
   end
 
   def datatable

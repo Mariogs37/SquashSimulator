@@ -1,11 +1,8 @@
 //functions defined
 
 function start() {
-
   for (var n = 1; n < 10; n++) {
-
     var name = "#slider" + n;
-
     $(name).slider({
       min: 0,
       max: 100,
@@ -90,7 +87,6 @@ function run_simulation() {
         team1_09++;
         break;
     }
-
     if (teamMatches1 > teamMatches2) {
       totalMatches1++;
     }
@@ -98,10 +94,8 @@ function run_simulation() {
       totalMatches2++;
     }
 
-
     var selectText1 = $('#team1 option:selected').html();
     var selectText2 = $('#team2 option:selected').html();
-
     var output = "Over " + num_of_simulations.toString() + " simulations, " + selectText1 + ": " + totalMatches1.toString() + ", " + selectText2 + ": " + totalMatches2.toString() + ". " +
     selectText1 + " wins " + ((totalMatches1/num_of_simulations)*100).toFixed(2) + "%. " + selectText2 + " wins " + ((totalMatches2/num_of_simulations)*100).toFixed(2) + "%.";
 
@@ -154,25 +148,12 @@ function get_all_players(array_of_teams){
 
 }
 
- //code run on page load
+//code run on page load
 
 $(function(){
   start();
   $('#simulate_button').click(run_simulation);
   $('#reset_button').click(reset);
-  $('#rankings_link').click(function(){
-    $.ajax({
-      dataType: 'json',
-      url: '/rankings',
-      type: 'get'
-    }).done(function(received_data){
-      for (var m = 0; m < received_data.length; m++) {
-        $('#rankings ol').append('<li>' + received_data[m] + '</li>');
-      }
-
-
-    });
-  });
   $('select').change(function(){
     var selected_team1 = $('#team1').val();
     var selected_team2 = $('#team2').val();
@@ -188,16 +169,16 @@ $(function(){
       var first = received_data.teams[0];
       var second = received_data.teams[1];
       for (var index1 = 0; index1 < first.length; index1++)
-      {
-        $('#Team1Name'+ (index1+1)).val(first[index1][0]);
-        $('#Team1Name'+ (index1+1)).data('rating', first[index1][1]);
+        {
+          $('#Team1Name'+ (index1+1)).val(first[index1][0]);
+          $('#Team1Name'+ (index1+1)).data('rating', first[index1][1]);
 
-      }
+        }
       for (var index2 = 0; index2 < second.length; index2++)
-      {
-        $('#Team2Name'+ (index2+1)).val(second[index2][0]);
-        $('#Team2Name'+ (index2+1)).data('rating', second[index2][1]);
-      }
+        {
+          $('#Team2Name'+ (index2+1)).val(second[index2][0]);
+          $('#Team2Name'+ (index2+1)).data('rating', second[index2][1]);
+        }
       if ( ($('#team1').val() != 'Select Team') || ($('#team2').val() != 'Select Team')) {
         for (var k = 1; k <= first.length; k++) {
           var first_rating = parseFloat($('#Team1Name'+k).data().rating);
@@ -208,8 +189,7 @@ $(function(){
           $('#team2probability'+k).val(second_prob);
         }
       }
-
-    });
   });
+});
 
 });

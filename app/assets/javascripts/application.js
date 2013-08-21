@@ -5,5 +5,4 @@
 //= require 'squashsimulator.js'
 //= require 'raphael-min.js'
 //= require 'morris.js-0.4.1/morris.min.js'
-
 //= require 'jquery-ui-1.10.2.custom/js/jquery-ui-1.10.2.custom.js'
