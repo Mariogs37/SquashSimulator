@@ -30,9 +30,6 @@ Middlebury = Team.create(:name => 'Middlebury', :team_id => 7678)
 Wesleyan = Team.create(:name => 'Wesleyan', :team_id => 7702)
 GWU = Team.create(:name => 'GWU', :team_id => 7718)
 Bowdoin = Team.create(:name => 'Bowdoin', :team_id => 7686)
-
-
-
 Amherst = Team.create(:name => 'Amherst', :team_id => 7690)
 Drexel = Team.create(:name => 'Drexel', :team_id => 7703)
 Conn = Team.create(:name => 'Conn', :team_id => 7698)
