@@ -10,6 +10,6 @@
 #
 
 class Team < ActiveRecord::Base
-  attr_accessible :name, :team_id
+  attr_accessible :name, :team_id, :ranking
   scope :sorted, order("name asc")
 end

@@ -3,7 +3,7 @@ class PagesController < ApplicationController
 
   def simulation
     @top_80 = Team.all
-    @top_20 = Team.limit(20).sorted
+    @top_20 = Team.where("ranking > 0 AND ranking < 21")
   end
 
   def ladder
@@ -45,7 +45,6 @@ class PagesController < ApplicationController
     collection = [team1, team2].each do |team|
       url = "http://modules.ussquash.com/ssm/pages/leagues/Team_Information.asp?id=#{team}"
 
-
       doc = Nokogiri::HTML(open(url))
       player_names = doc.css('.table.table-bordered.table-striped.table-condensed')[1].css('tr td a').map(&:content)
       player_ratings = doc.css('.table.table-bordered.table-striped.table-condensed')[1].css('tr td:nth-child(4)').map(&:content)
@@ -58,7 +57,5 @@ class PagesController < ApplicationController
       two_teams << player_hash
     end
     render :json => {teams: two_teams}
-
   end
-
 end
