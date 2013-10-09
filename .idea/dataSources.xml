@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="826376290">
+  <component name="DataSourceManagerImpl" format="xml" hash="337592788">
     <data-source source="LOCAL" name="Rails SquashSimulator: development" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="149b09bf-89db-4e9f-89d4-ad2e7b71da4e">
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql://127.0.0.1/SquashSimulator_development</jdbc-url>
@@ -11,6 +11,19 @@
         </library>
         <library>
           <url>jar://$USER_HOME$/Library/Preferences/RubyMine50/jdbc-drivers/postgresql-9.2-1002.jdbc4.jar!/</url>
+        </library>
+      </libraries>
+    </data-source>
+    <data-source source="LOCAL" name="Rails SquashSimulator: production" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="178685e6-0d6c-4b55-88a5-ea7c46bcce0f">
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1/SquashSimulator_production</jdbc-url>
+      <user-name>benjaminclayman</user-name>
+      <libraries>
+        <library>
+          <url>file://$USER_HOME$/Library/Preferences/RubyMine50/jdbc-drivers/postgresql-driver-license.txt</url>
+        </library>
+        <library>
+          <url>file://$USER_HOME$/Library/Preferences/RubyMine50/jdbc-drivers/postgresql-9.2-1002.jdbc4.jar</url>
         </library>
       </libraries>
     </data-source>

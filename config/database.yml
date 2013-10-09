@@ -6,3 +6,12 @@ development:
   host: localhost
   username: benjaminclayman
   password:
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  host: localhost
+  database: SquashSimulator_production
+  pool: 5
+  username: benjaminclayman
+  password:

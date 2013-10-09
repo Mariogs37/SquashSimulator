@@ -6,6 +6,7 @@ gem 'jquery-rails'
 gem 'haml'
 gem 'bcrypt-ruby', '~>3.0.0'
 gem 'nokogiri'
+gem 'protected_attributes'
 
 group :assets do
 	gem 'sass-rails'
