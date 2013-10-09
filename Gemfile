@@ -7,12 +7,9 @@ gem 'haml'
 gem 'bcrypt-ruby', '~>3.0.0'
 gem 'nokogiri'
 gem 'protected_attributes'
-
-group :assets do
-	gem 'sass-rails'
-	gem 'coffee-rails'
-	gem 'uglifier'
-end
+gem 'sass-rails'
+gem 'coffee-rails'
+gem 'uglifier'
 
 group :development, :test do
 	gem 'pry-rails'
