@@ -12,4 +12,5 @@ SquashSimulator::Application.routes.draw do
   get '/team_lookup' => 'pages#scrape'
   get '/rankings' => 'pages#rankings'
   get '/ladder' => 'pages#ladder'
+  get '/update' => 'pages#get_most_recent_ladder'
 end
