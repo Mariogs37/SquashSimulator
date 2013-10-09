@@ -4,14 +4,7 @@
     <list default="true" id="b23b2ede-cb9b-4816-bf83-5a0640ce60ba" name="Default" comment="">
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/pages/.simulation.html.haml.swp" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/db/.seeds.rb.swp" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/SquashSimulator.iml" afterPath="$PROJECT_DIR$/.idea/SquashSimulator.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/database.yml" afterPath="$PROJECT_DIR$/config/database.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="SquashSimulator.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -19,7 +12,7 @@
     <file path="/pages_controller.rb" changelist="b23b2ede-cb9b-4816-bf83-5a0640ce60ba" time="1381335299869" ignored="false" />
     <file path="/routes.rb" changelist="b23b2ede-cb9b-4816-bf83-5a0640ce60ba" time="1381335040152" ignored="false" />
     <file path="/database.yml" changelist="b23b2ede-cb9b-4816-bf83-5a0640ce60ba" time="1381341468179" ignored="false" />
-    <file path="/Gemfile" changelist="b23b2ede-cb9b-4816-bf83-5a0640ce60ba" time="1381341916125" ignored="false" />
+    <file path="/Gemfile" changelist="b23b2ede-cb9b-4816-bf83-5a0640ce60ba" time="1381342857922" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +62,7 @@
       <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="24" selection-start="150" selection-end="150" vertical-scroll-proportion="0.16528925">
+            <state line="2" column="9" selection-start="40" selection-end="40" vertical-scroll-proportion="0.041322313">
               <folding />
             </state>
           </provider>
@@ -768,7 +761,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="24" selection-start="150" selection-end="150" vertical-scroll-proportion="0.16528925">
+        <state line="2" column="9" selection-start="40" selection-end="40" vertical-scroll-proportion="0.041322313">
           <folding />
         </state>
       </provider>
