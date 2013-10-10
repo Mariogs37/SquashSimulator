@@ -11,6 +11,7 @@ gem 'protected_attributes'
 gem 'sass-rails'
 gem 'coffee-rails'
 gem 'uglifier'
+gem 'rails_12factor'
 
 group :development, :test do
 	gem 'pry-rails'
