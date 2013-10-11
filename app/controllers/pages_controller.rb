@@ -39,6 +39,7 @@ class PagesController < ApplicationController
     #insert creation of ladder object with order
     @ladder = Ladder.create(order: list)
     render 'ladder'
+    p @ladder
   end
 
   def datatable
