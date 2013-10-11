@@ -38,8 +38,8 @@ class PagesController < ApplicationController
     end
     #insert creation of ladder object with order
     @ladder = Ladder.create(order: list)
-    render 'ladder'
     p @ladder
+    render 'ladder'
   end
 
   def datatable
