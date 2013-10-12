@@ -7,7 +7,7 @@ class PagesController < ApplicationController
   end
 
   def ladder
-    if Ladder.exists? && Ladder.all.first.order.length != 0
+    if Ladder.exists? && Ladder.all.first.ordered_list.length != 0
       @ladder = Ladder.all.first
     else
       get_most_recent_ladder
@@ -38,7 +38,6 @@ class PagesController < ApplicationController
     end
     #insert creation of ladder object with order
     @ladder = Ladder.create(order: list)
-    p @ladder
     render 'ladder'
   end
 
