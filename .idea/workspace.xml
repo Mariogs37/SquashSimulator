@@ -9,7 +9,7 @@
     <ignored path="SquashSimulator.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="b23b2ede-cb9b-4816-bf83-5a0640ce60ba" time="1381525695368" ignored="false" />
-    <file path="/pages_controller.rb" changelist="b23b2ede-cb9b-4816-bf83-5a0640ce60ba" time="1381602054337" ignored="false" />
+    <file path="/pages_controller.rb" changelist="b23b2ede-cb9b-4816-bf83-5a0640ce60ba" time="1381602198032" ignored="false" />
     <file path="/routes.rb" changelist="b23b2ede-cb9b-4816-bf83-5a0640ce60ba" time="1381335040152" ignored="false" />
     <file path="/database.yml" changelist="b23b2ede-cb9b-4816-bf83-5a0640ce60ba" time="1381341468179" ignored="false" />
     <file path="/Gemfile" changelist="b23b2ede-cb9b-4816-bf83-5a0640ce60ba" time="1381374784040" ignored="false" />
@@ -44,7 +44,7 @@
       <file leaf-file-name="pages_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/pages_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="42" selection-start="227" selection-end="227" vertical-scroll-proportion="0.18024032">
+            <state line="9" column="37" selection-start="222" selection-end="222" vertical-scroll-proportion="0.18024032">
               <folding />
             </state>
           </provider>
@@ -745,7 +745,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/pages_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="42" selection-start="227" selection-end="227" vertical-scroll-proportion="0.18024032">
+        <state line="9" column="37" selection-start="222" selection-end="222" vertical-scroll-proportion="0.18024032">
           <folding />
         </state>
       </provider>
