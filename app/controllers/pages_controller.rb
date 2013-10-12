@@ -37,7 +37,7 @@ class PagesController < ApplicationController
       list << player[0]
     end
     #insert creation of ladder object with order
-    @ladder = Ladder.create(order: list)
+    @ladder = Ladder.create(ordered_list: list)
     render 'ladder'
   end
 

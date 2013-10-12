@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(version: 20131007214022) do
   enable_extension "plpgsql"
 
   create_table "ladders", force: true do |t|
-    t.text     "order"
+    t.text     "ordered_list"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
