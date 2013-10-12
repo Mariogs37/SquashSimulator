@@ -7,7 +7,7 @@ class PagesController < ApplicationController
   end
 
   def ladder
-    if Ladder.exists?
+    if Ladder.exists? && Ladder.length != 0
       @ladder = Ladder.all.first
     else
       get_most_recent_ladder
