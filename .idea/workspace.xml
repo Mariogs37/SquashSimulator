@@ -46,7 +46,7 @@
       <file leaf-file-name="pages_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/pages_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="11" selection-start="183" selection-end="183" vertical-scroll-proportion="0.14018692">
+            <state line="13" column="6" selection-start="329" selection-end="329" vertical-scroll-proportion="0.24032043">
               <folding />
             </state>
           </provider>
@@ -684,11 +684,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/database.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="26" selection-start="262" selection-end="262" vertical-scroll-proportion="0.27817404" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/_nav.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="0" selection-start="395" selection-end="395" vertical-scroll-proportion="0.17725259" />
@@ -771,9 +766,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config/database.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="26" selection-start="262" selection-end="262" vertical-scroll-proportion="0.26859504">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/pages_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="11" selection-start="183" selection-end="183" vertical-scroll-proportion="0.14018692">
+        <state line="13" column="6" selection-start="329" selection-end="329" vertical-scroll-proportion="0.24032043">
           <folding />
         </state>
       </provider>
