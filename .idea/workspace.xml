@@ -4,9 +4,8 @@
     <list default="true" id="b23b2ede-cb9b-4816-bf83-5a0640ce60ba" name="Default" comment="">
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/pages/.simulation.html.haml.swp" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/db/.seeds.rb.swp" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/ladder.rb" afterPath="$PROJECT_DIR$/app/models/ladder.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/pages_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/pages_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20131007214022_add_ladder_table.rb" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="SquashSimulator.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -73,10 +72,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ladder.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ladder.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/ladder.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="24" selection-start="90" selection-end="90" vertical-scroll-proportion="0.040053405">
+            <state line="2" column="24" selection-start="90" selection-end="90" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -91,10 +90,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="20131007214022_add_ladder_table.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20131007214022_add_ladder_table.rb">
+      <file leaf-file-name="20131012204107_add_ladders_table.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20131012204107_add_ladders_table.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="25" selection-start="118" selection-end="118" vertical-scroll-proportion="0.0">
+            <state line="6" column="0" selection-start="148" selection-end="148" vertical-scroll-proportion="0.120160215">
               <folding />
             </state>
           </provider>
@@ -127,6 +126,7 @@
         <option value="$PROJECT_DIR$/app/views/pages/ladder.html.haml" />
         <option value="$PROJECT_DIR$/app/controllers/pages_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/ladder.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20131012204107_add_ladders_table.rb" />
       </list>
     </option>
   </component>
@@ -738,20 +738,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/pages/ladder.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="24" selection-start="38" selection-end="38" vertical-scroll-proportion="-1.25">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20131007214022_add_ladder_table.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="25" selection-start="118" selection-end="118" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/pages_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="39" column="39" selection-start="1391" selection-end="1391" vertical-scroll-proportion="0.0">
@@ -775,7 +761,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/ladder.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="24" selection-start="90" selection-end="90" vertical-scroll-proportion="0.040053405">
+        <state line="2" column="24" selection-start="90" selection-end="90" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/pages/ladder.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="24" selection-start="38" selection-end="38" vertical-scroll-proportion="-1.25">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20131012204107_add_ladders_table.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="148" selection-end="148" vertical-scroll-proportion="0.120160215">
           <folding />
         </state>
       </provider>

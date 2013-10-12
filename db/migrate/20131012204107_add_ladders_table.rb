@@ -1,4 +1,4 @@
-class AddLadderTable < ActiveRecord::Migration
+class AddLaddersTable < ActiveRecord::Migration
   def change
     create_table :ladders do |t|
       t.text :ordered_list
