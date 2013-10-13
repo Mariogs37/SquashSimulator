@@ -8,7 +8,8 @@ class PagesController < ApplicationController
 
   def ladder
     if Ladder.exists? && Ladder.all.first.ordered_list.length != 0
-      @ladder = Ladder.all.first
+      most_recent = Ladder.all.order('created_at').last
+      @ladder = most_recent
     else
       get_most_recent_ladder
     end
