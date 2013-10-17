@@ -4,17 +4,12 @@
     <list default="true" id="b23b2ede-cb9b-4816-bf83-5a0640ce60ba" name="Default" comment="">
       <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/pages/.simulation.html.haml.swp" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/db/.seeds.rb.swp" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/pages/ladder.html.haml" afterPath="$PROJECT_DIR$/app/views/pages/ladder.html.haml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/pages_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/pages_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/squashsimulator.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/squashsimulator.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/squashsimulator.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/squashsimulator.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="SquashSimulator.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="b23b2ede-cb9b-4816-bf83-5a0640ce60ba" time="1381944998842" ignored="false" />
-    <file path="/pages_controller.rb" changelist="b23b2ede-cb9b-4816-bf83-5a0640ce60ba" time="1381956272943" ignored="false" />
+    <file path="/pages_controller.rb" changelist="b23b2ede-cb9b-4816-bf83-5a0640ce60ba" time="1382019912768" ignored="false" />
     <file path="/routes.rb" changelist="b23b2ede-cb9b-4816-bf83-5a0640ce60ba" time="1381335040152" ignored="false" />
     <file path="/database.yml" changelist="b23b2ede-cb9b-4816-bf83-5a0640ce60ba" time="1381341468179" ignored="false" />
     <file path="/Gemfile" changelist="b23b2ede-cb9b-4816-bf83-5a0640ce60ba" time="1381374784040" ignored="false" />
@@ -46,10 +41,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="pages_controller.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="pages_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/pages_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="0" selection-start="1134" selection-end="1134" vertical-scroll-proportion="0.0">
+            <state line="13" column="3" selection-start="352" selection-end="352" vertical-scroll-proportion="0.26859504">
               <folding />
             </state>
           </provider>
@@ -100,10 +95,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ladder.html.haml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ladder.html.haml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/pages/ladder.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="38" selection-start="189" selection-end="189" vertical-scroll-proportion="0.17094018">
+            <state line="8" column="38" selection-start="189" selection-end="189" vertical-scroll-proportion="-5.0">
               <folding />
             </state>
           </provider>
@@ -149,9 +144,9 @@
         <option value="$PROJECT_DIR$/db/migrate/20131016192158_add_players_table.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20131016205309_add_players_table.rb" />
         <option value="$PROJECT_DIR$/app/models/player.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/pages_controller.rb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/squashsimulator.scss" />
         <option value="$PROJECT_DIR$/app/views/pages/ladder.html.haml" />
+        <option value="$PROJECT_DIR$/app/controllers/pages_controller.rb" />
       </list>
     </option>
   </component>
@@ -820,13 +815,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/squashsimulator.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="171" column="8" selection-start="4711" selection-end="4711" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -848,13 +836,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/pages_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="0" selection-start="1134" selection-end="1134" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/squashsimulator.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state line="88" column="20" selection-start="1270" selection-end="1270" vertical-scroll-proportion="0.0">
@@ -864,7 +845,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/pages/ladder.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="38" selection-start="189" selection-end="189" vertical-scroll-proportion="0.17094018">
+        <state line="8" column="38" selection-start="189" selection-end="189" vertical-scroll-proportion="-5.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/squashsimulator.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="171" column="8" selection-start="4711" selection-end="4711" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/pages_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="3" selection-start="352" selection-end="352" vertical-scroll-proportion="0.26859504">
           <folding />
         </state>
       </provider>

@@ -7,12 +7,12 @@ class PagesController < ApplicationController
   end
 
   def ladder
-    if Ladder.exists? && Ladder.all.first.ordered_list.length != 0
-      most_recent = Ladder.all.order('created_at').last
-      @ladder = most_recent
-    else
-      get_most_recent_ladder
-    end
+    #if Ladder.exists? && Ladder.all.first.ordered_list.length != 0
+    #  most_recent = Ladder.all.order('created_at').last
+    #  @ladder = most_recent
+    #else
+    get_most_recent_ladder
+    #end
   end
 
   def get_most_recent_ladder
