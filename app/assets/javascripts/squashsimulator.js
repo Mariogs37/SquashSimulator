@@ -144,10 +144,6 @@ function calculate_probability(rating1, rating2) {
   return first_probability;
 }
 
-function get_all_players(array_of_teams){
-
-}
-
 //code run on page load
 
 $(function(){

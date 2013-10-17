@@ -1,5 +1,13 @@
-#ladder
-  %ol
-    -@ladder.ordered_list.each do |l|
-      %li
-        = l
+%div.row
+  %div.col.header Ranking
+  %div.col.header Player
+  %div.col.header Rating
+  %div.col.header Team
+  %br
+%div.row
+  -@ladder.each do |player|
+    %div.col= @ladder.index(player) + 1
+    %div.col= player.name
+    %div.col= sprintf("%0.4f", player.rating)
+    %div.col= player.team
+    %br

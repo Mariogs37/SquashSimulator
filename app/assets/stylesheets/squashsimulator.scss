@@ -59,12 +59,6 @@
   text-align: center;
 }
 
-#datatable {
-  font-size: 14px;
-  width: 100%;
-}
-
-
 #slider1 {
   margin-top: 45px;
 }
@@ -77,6 +71,22 @@
 body {
   font-family: 'Libre Baskerville', serif;
   font-size: 12px;
+}
+
+.row {
+  width: 100%;
+}
+
+.header {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.col {
+  float: left;
+  width: 25%;
+  margin-top: 10px;
+  text-align: center;
 }
 
 #instructions {
