@@ -133,14 +133,12 @@ function run_simulation() {
 
 function calculate_probability(rating1, rating2) {
   var first_probability;
-  if (rating1 > rating2) {
+  if (rating1 > rating2)
     first_probability = 1/(Math.pow(10, (-(rating1-rating2)/0.5))+1);
     first_probability = Math.round(100 * first_probability);
-  }
-  else {
+  else
     first_probability = 1 - (1/(Math.pow(10, (-(rating2-rating1)/0.5))+1));
     first_probability = Math.round(100 * first_probability);
-  }
   return first_probability;
 }
 

@@ -24,6 +24,21 @@ class PagesController < ApplicationController
       url = "http://modules.ussquash.com/ssm/pages/leagues/Team_Information.asp?id=#{team.team_id}"
       doc = Nokogiri::HTML(open(url))
       player_names = doc.css('.table.table-bordered.table-striped.table-condensed')[1].css('tr td a').map(&:content)
+      for i in (0..player_names.length-1)
+        comma_index = player_names[i] =~ /,/
+        first_name = []
+        last_name = []
+        (0..comma_index-1).each do |index|
+          last_name << player_names[i][index]
+        end
+        last_name = last_name.join()
+        (comma_index+1..player_names[i].length-1).each do |index|
+          first_name << player_names[i][index]
+        end
+        first_name = first_name.join()
+        full_name = first_name + ' ' + last_name
+        player_names[i] = full_name
+      end
       player_ratings = doc.css('.table.table-bordered.table-striped.table-condensed')[1].css('tr td:nth-child(4)').map(&:content)
       for i in (0..player_names.length-1)
         player = Player.create(:name => player_names[i], :rating => player_ratings[i].to_f, :team => team.name)
@@ -31,7 +46,7 @@ class PagesController < ApplicationController
       end
     end
 
-    all_players = all_players.sort{|player1, player2| player1.rating <=> player2.rating}.reverse.first(200)
+    all_players = all_players.sort{|player1, player2| player1.rating <=> player2.rating}.reverse.first(100)
     #insert creation of ladder object with order
     @ladder = all_players
     render 'ladder'
